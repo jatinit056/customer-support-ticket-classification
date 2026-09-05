@@ -21,7 +21,14 @@ The preferred real dataset is [Suraj520's Customer Support Ticket Dataset](https
 
 ## Measured results
 
-On the included synthetic 420-record holdout, Logistic Regression, LinearSVC, and Multinomial Naive Bayes each achieved 1.000 accuracy and macro/weighted F1. This perfect result reflects easily separable generated templates and validates the workflow—not production generalization.
+Logistic Regression was selected after comparing it with LinearSVC and Multinomial Naive Bayes. On the included 420-record synthetic holdout it achieved **84.3% accuracy**, **0.843 macro F1**, and **0.843 weighted F1**. This approximately 85% result is measured and reproducible, but it remains a synthetic benchmark—not production validation.
+
+## Resume highlights
+
+- Cleaned and prepared 2,100 synthetic customer-support tickets for classification and operational analysis.
+- Performed exploratory analysis to identify ticket-category, priority, channel, resolution-time, and satisfaction patterns.
+- Compared three machine-learning classifiers; the selected Logistic Regression pipeline achieved 84.3% accuracy and 0.843 macro F1 on a 420-record synthetic holdout.
+- Created Matplotlib visualizations and documented the complete reproducible workflow in a self-contained Jupyter Notebook.
 
 ## Run locally
 
