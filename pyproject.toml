@@ -1,0 +1,13 @@
+[build-system]
+requires = ["setuptools>=75"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "customer-support-ticket-classification"
+version = "1.0.0"
+requires-python = ">=3.11"
+dependencies = ["pandas>=2.2,<4", "numpy>=2,<3", "scikit-learn>=1.5,<2", "matplotlib>=3.9,<4", "Flask>=3,<4", "joblib>=1.4,<2"]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]
